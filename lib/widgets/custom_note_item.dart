@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:notes_app/constants.dart';
 
 
 class NoteItem extends StatelessWidget {
@@ -20,7 +21,7 @@ class NoteItem extends StatelessWidget {
             title: const Text(
               'Flutter Tips',
               style: TextStyle(
-                color: Colors.black,
+                color: myBlack,
                 fontSize:26,
               ), 
               ),
