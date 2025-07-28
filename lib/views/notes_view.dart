@@ -6,7 +6,13 @@ import 'package:notes_app/constants.dart';
 
 class NotesView extends StatelessWidget {
   const NotesView({super.key});
-
+  
+  /* ScrollController sc;
+   initState(){
+    sc = new ScrollController();
+    
+    super.initState();
+   }*/
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
@@ -14,6 +20,8 @@ class NotesView extends StatelessWidget {
         backgroundColor: kPrimaryColor,
         onPressed: (){
           showModalBottomSheet(
+            //controller: sc,
+            //isScrollControlled: true,
             shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(16),
             ),
